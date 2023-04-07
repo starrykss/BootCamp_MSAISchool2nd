@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=let, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 자동 형변환 알아보기
+        console.log("4" - 2);   
+        console.log("4" + 2);    
+        console.log(typeof("4" + 2));
+        console.log("4" * "2");
+        console.log("10" / "2");
+        console.log(2 + true);
+        console.log(2 + undefined);
+        console.log(4 + null);
+        console.log("4" + null);
+        console.log(true + null);
+        console.log(true + undefined);
+
+        /*
+            웹 브라우저에서  [Ctrl] + [Shift] + [J]를 눌러 결과를 확인한다.
+
+            2       -> number
+            42      -> string, "42" +는 연결(Concatenation) 연산자
+            string 
+            8       -> number
+            5       -> number
+            3       -> number, true는 1로 변환된다.
+            NaN     -> ?? + undefined = NaN
+            4       -> number, null은 0으로 변환된다.
+            4null   -> string
+            1       -> number
+            NaN     -> ?? + undefined = NaN
+        */
+
+    </script>
+</body>
+</html>
