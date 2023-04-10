@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>break, continue 예제</h2>
+    <p id="result"></p>
+    <script>
+        let text = "";
+        for (let i = 0; i < 10; i++) {
+            if (i == 3) {
+                text += "모두 즐겁고 행복하세요.";
+                continue;    // continue 사용하기 : 3은 표시되지 않는다.
+            }
+            text = text + i;
+        }
+
+        document.getElementById("result").innerHTML = text;
+
+
+        
+    </script>
+</body>
+</html>
