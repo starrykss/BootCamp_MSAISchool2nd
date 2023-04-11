@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let items = [
+            {name : 'MSI 프레스티지 15 A12UC', price: 1490000},
+            {name : 'ASUS 비보북 17 X1702ZA-AU105', price : 768000},
+            {name : '삼성전자 갤럭시북2 프로 NT950XEE-X71AR', price : 2351000},
+            {name : '레노버 게이밍 3i 15IAH I5 3050Ti', price : 899000},
+            {name : 'APPLE 2021 맥북프로16 MK183KH/A M1 Pro', price : 2815000},
+            {name : 'DELL 인스피론 16 5620-UB05KR', price : 1290000}
+        ];
+
+        // 각 아이템의 가격을 10% 할인한 결과만 반환
+        let discounted_price = items.map((item) => {
+            return item.price = (item.price - item.price * 0.1);
+        });
+
+        document.write(discounted_price + "<br />");
+    </script>
+</body>
+</html>

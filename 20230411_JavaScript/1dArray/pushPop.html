@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cities = ["서울", "부산", "인천"];
+        let extra_cities = ["광주", "대전"];
+        
+        show_item(cities);
+
+        // push() : 요소를 뒤에서 삽입
+        document.write("push() : 전주, 춘천 <br/>");
+        cities.push("전주", "춘천");
+        show_item(cities);
+
+        // pop() ; 요소를 앞에서 빼기
+        let returnValue = cities.pop();
+        document.write("pop() : " + returnValue + "<br/>");
+        show_item(cities);
+        
+        function show_item(in_array) {
+            if (Array.isArray(in_array)) {    // 배열인지 체크하기
+                for (var idx = 0; idx < in_array.length; idx++) {
+                    document.write("in_array[" + idx + "] : " + in_array[idx] + "<br/>");
+                }
+                document.write(`아이템 수 : ${in_array.length} <br/>`);
+            }
+        }
+    </script>
+</body>
+</html>
