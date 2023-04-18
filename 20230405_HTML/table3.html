@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        table th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: teal;
+            color: white;
+        }
+        th, td {
+            width: 120px;
+            padding: 5px;
+            text-align: center;
+        }
+        thead {
+            background-color: teal;
+            color: white;
+        }
+        tbody {
+            background-color: #4db6ac;
+        }
+        tfoot {
+            background-color: #004d40;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+		<!-- thead, tbody, tfoot 태그를 사용하여 표 만들기 -->
+    <table>
+        <caption>일별 근무자</caption>  
+        <thead>
+            <tr><th>날짜</th><th>근무자</th><th>근무 시간</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>03/02</td><td>김창수</td><td>8</td></tr>
+            <tr><td>03/02</td><td>이아름</td><td>4</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">총 근무 시간</td><td>12</td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
