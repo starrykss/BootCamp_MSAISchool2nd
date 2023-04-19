@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 1rem;
+        }
+
+        /* 자녀 결합자 */
+        .world > .country {   
+            color: pink;
+        }
+
+        /* 자손 결합자 */
+        .world .capital {
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="world">
+        World
+        <div class="country">
+            England
+            <div class="capital">
+                London
+            </div>
+        </div>
+
+        <div class="country">
+            South Korea
+            <div class="capital">
+                Seoul
+            </div>
+        </div>
+
+        <div class="country">
+            Germany
+            <div class="capital">
+                Berlin
+            </div>
+        </div>
+    </div>
+</body>
+</html>
