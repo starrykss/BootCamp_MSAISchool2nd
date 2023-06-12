@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes two_times {
+            0% { transform: scale(2); }
+            25% { transform: rotate(20deg); }
+            75% { transform: translateX(10%); }
+            100% { transform: scale(1); }
+        }
+        
+        img:hover {
+            animation-name: two_times;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>프랑스</h3>
+        <img src="../images/CSS/paris_320.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reprehenderit sint, rerum vitae itaque optio neque cupiditate hic, eum voluptas et quae soluta? Quo voluptatum, minus obcaecati velit dicta qui.
+        Rem deleniti cumque ex quidem, cupiditate enim mollitia eaque iste sapiente omnis. Sint qui reiciendis aliquid minus praesentium quasi alias neque doloremque vero magni ducimus, maxime magnam sunt tempora iusto.</p>
+    </div>
+</body>
+</html>

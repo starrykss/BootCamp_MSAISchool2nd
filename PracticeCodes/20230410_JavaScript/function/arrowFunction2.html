@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const message = (inyourName) => {
+            return "안녕하세요, " + inyourName + "님";
+        }
+
+        const current_Date = (inName) => {
+            let sayHello = message(inName);
+            let curr_Date = new Date().toISOString().slice(0, 10);
+            document.write(sayHello + " 오늘의 날짜는 " + curr_Date + "입니다. <br/>");
+        }
+
+        current_Date("김창수");
+        current_Date("이아름");
+    </script>
+</body>
+</html>

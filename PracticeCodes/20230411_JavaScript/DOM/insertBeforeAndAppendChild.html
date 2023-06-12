@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice 2</title>
+</head>
+<body>
+    <ul id="cities">
+        <li>서울</li>
+        <li id ="newyork">뉴욕</li>
+        <li>부다페스트</li>
+    </ul>
+    <script>
+        let newNode = document.createElement("li");
+        newNode.innerText = "파리";
+
+        // InsertBefore(), appendChild()를 이용한 노드 추가
+        let ul_node = document.getElementById("cities");
+        let existing_node = document.getElementById("newyork");
+        ul_node.insertBefore(newNode, existing_node);
+
+        
+        let imgNode = document.createElement("img");
+        imgNode.src = "images/paris.png";
+        let body_node = document.documentElement.lastChild;    // body 노드
+        body_node.appendChild(imgNode);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="cities">
+        <li>서울</li>
+        <li id ="newyork">뉴욕</li>
+        <li>부다페스트</li>
+        <li>프라하</li>
+    </ul>
+    <script>
+        let li_Elements = document.getElementsByTagName("li");
+        for (i = 0; i < li_Elements.length; i++) {
+            document.write(li_Elements[i].nodeName + " : " + li_Elements[i].childNodes[0].nodeValue + "<br />");
+        }
+    </script>
+</body>
+</html>

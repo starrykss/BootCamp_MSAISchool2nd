@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bucket_list = [ "세계 3대 폭포 구경하기",
+                            "부다페스트 세체니 다리 위에서 노을을 보면서 멍때리기",
+                            "10권 책 쓰기",
+                            "낯선 곳에서 3년 이상 살아보기"
+        ];
+
+        // 현재 bucket_list 출력하기
+        function show_bucket_list(in_bucketlist) {
+            for (var idx = 0; idx < in_bucketlist.length; idx++) {
+                document.write(`${idx} : ${in_bucketlist[idx]} <br/>`)
+            }
+        }
+
+        document.write(" ### 기존 아이템 1개 삭제 ###" + "<br/>");
+        
+        // array.splice(start, [, deleteCount[, item1[, item2[, ...]]]])
+        // : 존재하는 배열의 아이템을 삭제, 교체하거나 새로운 아이템을 추가할 때 사용한다.
+        let remove_items = bucket_list.splice(2, 1);
+        
+        document.write(remove_items + "<br/>");
+        show_bucket_list(bucket_list);
+
+        document.write(" ### 새로운 아이템 추가 ###" + "<br/");
+        bucket_list.splice(0, 0, "하루에 1시간 이상 산책하기", "남아메리카 여행하기");
+        show_bucket_list(bucket_list);
+
+        document.write(" ### 기존 아이템 수정 ###" + "<br/>");
+        bucket_list.splice(1, 1, "탄자니아 킬리만자로 트래킹하기");
+        show_bucket_list(bucket_list);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=let, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(Number(undefined));
+        console.log(Number(null));
+        console.log(Number(true));
+        console.log(Number(false));
+        console.log(Number("    1234    "));
+        console.log(Number("42.195"));
+        console.log(Number("0xf"));    // 16진수
+        console.log(Number("1234x"));  // 숫자 + 문자
+
+        /*
+            웹 브라우저에서  [Ctrl] + [Shift] + [J]를 눌러 결과를 확인한다.
+            
+            NaN
+            0
+            1
+            0
+            1234
+            42.195
+            15
+            NaN
+        */
+
+    </script>
+</body>
+</html>

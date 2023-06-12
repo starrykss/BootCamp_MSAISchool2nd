@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM이란 무엇인가?</title>
+    <script type="text/javascript">
+        let documentNodes = document.documentElement;    // HTML
+        document.write(documentNodes.nodeName + "<br />");
+
+        let htmlfirstChild = document.documentElement.firstChild;     // HEAD
+        document.write(htmlfirstChild.nodeName + "<br />");
+
+        let htmlnextSibling = document.documentElement.firstChild.nextSibling;    // #text
+        document.write(htmlnextSibling.nodeName + "<br />");
+
+        let htmllastChild = document.documentElement.lastChild;    // BODY
+        document.write(htmllastChild.nodeName + "<br />");
+
+        document.write("<br /> html 노드의 모든 자녀 노드 <br />");
+        let htmlchildNodes = document.documentElement.childNodes;
+
+        for (var i = 0; length = htmlchildNodes.length; i++) {
+            document.write(htmlchildNodes[i].nodeName + "<br />");
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML DOM(Document Object Model)</h1>
+    <p>HTML DOM 모델은 노드 트리이다.</p>
+</body>
+</html>

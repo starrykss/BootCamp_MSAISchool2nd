@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p ondblclick="showResponse()">안녕하세요</p>   <!-- 더블 클릭이 발생했을 때 showResponse() 함수를 발생시킨다. -->
+    <input type="button" value="확인" onclick="showMessage()">   <!-- 클릭하면 showMessage() 함수를 발생시킨다.-->
+    <script>
+        function showResponse() { console.log("네, 만나서 반갑습니다."); }
+        function showMessage() { console.log("그동안 잘 지내셨죠?"); }
+    </script>
+</body>
+</html>
