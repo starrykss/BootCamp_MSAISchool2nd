@@ -16,4 +16,5 @@
     - Machine Learning
     - Deep Learning
 
-<iframe src="https://msaischool.kr/course" width="900" height="1000"></iframe>
+> **More Info**
+> ***[Click Here](https://msaischool.kr/course)***
