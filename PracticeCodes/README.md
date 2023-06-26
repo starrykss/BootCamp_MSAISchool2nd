@@ -15,5 +15,7 @@
     - Data Analysis
     - Machine Learning
     - Deep Learning
+- **Computer Vision**
+    - OpenCV
 
 > 💡 **[More Info](https://msaischool.kr/course)**
