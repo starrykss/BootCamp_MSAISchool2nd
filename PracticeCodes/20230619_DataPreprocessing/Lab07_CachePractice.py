@@ -7,7 +7,7 @@ import time
 from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-from custom_dataset_prac import CustomImageDataset
+from Lab01_CustomDatasetPractice import CustomImageDataset
 
 def is_grayscale(img):
     return img.mode == 'L'
