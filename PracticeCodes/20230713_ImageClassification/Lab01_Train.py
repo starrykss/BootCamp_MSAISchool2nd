@@ -9,8 +9,8 @@ from torch.nn import CrossEntropyLoss
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 import torch.nn as nn
-from ex_01_customdataset import CustomDataset
-from ex_02_customdata import CustomDataset_ex02
+from Lab01_CustomDataset import CustomDataset
+from Lab02_CustomDataset import CustomDataset_ex02
 from tqdm import tqdm
 
 def train(model, train_loader, val_loader, epochs, DEVICE, optimizer, criterion) :
