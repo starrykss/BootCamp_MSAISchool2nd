@@ -6,7 +6,7 @@ class VGG11(nn.Module) :
     def __init__(self, num_classes=1000) :
         super(VGG11, self).__init__()
         self.features = models.vgg11(pretrained=False).features
-        self.avgpool = nn.AdaptiveAvgPool2d((7,7))
+        self.avgpool = nn.AdaptiveAvgPool2d((7, 7))
 
         self.classifier = nn.Sequential(
             nn.Linear(512 * 7 * 7, 4096),
