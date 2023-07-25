@@ -8,7 +8,7 @@ from lion_pytorch import Lion
 from torch.nn import CrossEntropyLoss
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from ex_0714_01_customdataset import My_ex01_customdata
+from Lab01_CustomDataset import My_ex01_customdata
 
 def train(model, train_loader, val_loader, epochs, optimizer, criterion, device) :
     best_val_acc = 0.0

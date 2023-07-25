@@ -10,7 +10,7 @@ from torch.optim import AdamW
 from torch.nn import CrossEntropyLoss
 from tqdm import tqdm
 from torch.utils.data import DataLoader
-from ex_01_0717_customdataset import MyFoodDataset
+from Lab01_CustomDataset import MyFoodDataset
 
 def train(model, train_loader, val_loader, epochs, optimizer, criterion, device) :
     best_val_acc = 0.0
