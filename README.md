@@ -1,14 +1,11 @@
 # Repository for Microsoft AI School 2nd
 
-> **Note** 
+> [!NOTE]
+> **2023.04.03 - 2023.09.19** (170 Days, 956 Hours)
 
-**2023.04.03 - 2023.09.19** (170 Days, 956 Hours)
-
-> **Warning**
-
-All files in this repository were made for studying from lecture materials.
-
-This repository includes some files and documents which were made from some activities of Microsoft AI School 2nd Boot Camp.
+> [!Warning]
+> All files in this repository were made for studying from lecture materials. <br/>
+> This repository includes some files and documents which were made from some activities of Microsoft AI School 2nd Boot Camp.
 
 <br>
 <table>
